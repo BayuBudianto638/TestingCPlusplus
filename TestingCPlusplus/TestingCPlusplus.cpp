@@ -2797,32 +2797,175 @@ int main() {
 	return 0;
 }
 */
+//
+//#include <iostream>
+//#include <sstream> 
+//#include <vector>
+//#include <string>
+//#include <Algorithm>
+//
+//using namespace std;
+//
+//int main()
+//{
+//	vector<int> s = { 4, 5, 4, 2, 4, 5, 2, 3, 2, 1, 1, 5, 4 };
+//	vector<int> count;
+//	int k = 2;
+//
+//	for (int i = 0; i < s.size(); i++)
+//	{
+//		if (s[i] == k)
+//			count.push_back(i);
+//	}
+//
+//	for (int num : count)
+//	{
+//		cout << num << " ";
+//	}
+//}
 
+/*
 #include <iostream>
-#include <sstream> 
 #include <vector>
-#include <string>
-#include <Algorithm>
+#include <algorithm>
 
 using namespace std;
 
 int main()
 {
-	vector<int> s = { 4, 5, 4, 2, 4, 5, 2, 3, 2, 1, 1, 5, 4 };
-	vector<int> count;
-	int k = 2;
+	cout << "Hello world!" << endl;
+	vector<int> n = {8, 3, 2, 1};
+	sort(n.begin(), n.end());
 
-	for (int i = 0; i < s.size(); i++)
-	{
-		if (s[i] == k)
-			count.push_back(i);
-	}
-
-	for (int num : count)
+	for (int num: n)
 	{
 		cout << num << " ";
 	}
+	return 0;
 }
+*/
+
+/*
+#include <iostream>
+#include <deque>
+
+using namespace std;
+
+int main()
+{
+	deque<int> d = {1, 2, 3};
+	d.push_front(0);
+	d.push_back(4);
+	d.pop_front();
+	cout << "Front: " << d.front() << ", Back : " << d.back() << endl;
+	return 0;
+}
+*/
+
+/*
+#include <iostream>
+#include <list>
+
+using namespace std;
+
+int main()
+{
+	list<int> d = {1, 2, 3};
+	d.push_front(5);
+	d.push_back(40);
+	d.pop_front();
+	cout << "Front: " << d.front() << ", Back : " << d.back() << endl;
+	return 0;
+}
+*/
+
+/*
+#include <iostream>
+#include <set>
+
+using namespace std;
+
+int main()
+{
+	set<int> d = {1, 2, 3};
+	d.insert(4);
+
+	for (int x : d)
+		cout << x << " ";
+	return 0;
+}
+
+*/
+
+/*
+#include <map>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	map<string, int> m;
+	m["Alice"] = 30;
+	m["Bob"] = 25;
+
+	cout << "Alice age : " << m["Alice"] << endl;
+}
+*/
+/*
+#include <algorithm>
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	vector<int> v = {1, 2, 3, 4, 5, 6};
+
+	if (binary_search(v.begin(), v.end(), 3))
+		cout << "Found";
+	else
+		cout << "Not Found";
+}
+*/
+/*
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+auto main() -> int
+{
+	int const n_rows = 3;
+	int const n_cols = 7;
+	int const m[n_rows] [n_cols] =
+	{
+		{
+			1, 2, 3, 4, 5, 6, 7
+		},
+		{
+			8, 9, 10, 11, 12, 13, 14
+		},
+		{
+			15, 16, 17, 18, 19, 20, 21
+		}
+	};
+
+	for ( int y = 0; y < n_rows; ++y)
+	{
+		for (int x = 0; x < n_cols; ++x)
+		{
+			cout << setw(4) << m[y][x];
+		}
+
+		cout << "\n";
+	}
+}
+*/
+
+
+
 
 
 
